@@ -38,7 +38,18 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "eqeqeq": "off",
+      "curly": "error",
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "plugin1/rule1": "error",
+      "noInlineConfig": true,
+      "no-unused-expressions": 0,
+      "reportUnusedDisableDirectives": true
+    }
   },
   "browserslist": [
     "> 1%",
