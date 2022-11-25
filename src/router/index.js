@@ -26,6 +26,11 @@ const routes = [
     component: BrazilView,
   },
   {
+    path: "/panama",
+    name: "panama",
+    component: PanamaView,
+  },
+  {
     path: "/hawaii",
     name: "hawaii",
     component: HawaiiView,
@@ -34,11 +39,6 @@ const routes = [
     path: "/jamaica",
     name: "jamaica",
     component: JamaicaView,
-  },
-  {
-    path: "/panama",
-    name: "panama",
-    component: PanamaView,
   },
 ];
 
