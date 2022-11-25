@@ -8,7 +8,7 @@
         </router-link>
         <figure>
           <router-link :to="destination.name">
-            <img :src="require(`@/assets/${destination.image}`)" :alt="destination.name" />
+            <img :src="require(`@/assets/${destination.image}`)" :alt="destination.name" class="img"/>
           </router-link>
         </figure>
     </div>
@@ -30,3 +30,17 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.home {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.img {
+  max-width: 200px;
+}
+.destinations {
+  display: flex;
+  justify-content: space-between;
+}
+</style>
