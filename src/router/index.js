@@ -39,7 +39,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  linkExactActiveClass: "vue-school-active-class",
+  linkExactActiveClass: "menu-active-class",
   history: createWebHashHistory(),
   routes,
 });

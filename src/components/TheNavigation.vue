@@ -10,6 +10,7 @@
 
 <style scoped>
 #nav {
+    padding: 30px;
   display: flex;
   align-items: center;
   position: sticky;
@@ -23,7 +24,7 @@
   text-decoration: none;
   font-weight: bold;
 }
-#nav a.vue-school-active-class {
+#nav a.menu-active-class {
   color: #ab26ab;
 }
 .nav-links {
@@ -40,5 +41,11 @@
   font-size: 20px;
   color: purple;
   font-weight: bold;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+  padding: 0 10px;
 }
 </style>
