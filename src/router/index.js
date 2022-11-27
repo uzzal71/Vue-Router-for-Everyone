@@ -22,15 +22,16 @@ const routes = [
     component: () => import(/* webpackChunkName: "brazil" */ "../views/BrazilView"),
   },
   {
-    path: "/panama",
-    name: "panama",
-    component: () => import(/* webpackChunkName: "panama" */ "../views/PanamaView"),
-  },
-  {
     path: "/hawaii",
     name: "hawaii",
     component: () => import(/* webpackChunkName: "hawaii" */ "../views/HawaiiView"),
   },
+  {
+    path: "/panama",
+    name: "panama",
+    component: () => import(/* webpackChunkName: "panama" */ "../views/PanamaView"),
+  },
+  
   {
     path: "/jamaica",
     name: "jamaica",
