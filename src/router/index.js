@@ -1,9 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import BrazilView from "../views/BrazilView.vue";
-import HawaiiView from "../views/HawaiiView.vue";
-import JamaicaView from "../views/JamaicaView.vue";
-import PanamaView from "../views/PanamaView.vue";
 
 const routes = [
   {
@@ -23,22 +19,22 @@ const routes = [
   {
     path: "/brazil",
     name: "brazil",
-    component: () => import("../views/BrazilView"),
+    component: () => import("../views/BrazilView.vue"),
   },
   {
     path: "/panama",
     name: "panama",
-    component: () => import("../views/PanamaView"),
+    component: () => import("../views/PanamaView.vue"),
   },
   {
     path: "/hawaii",
     name: "hawaii",
-    component: () => import("../views/HawaiiView"),
+    component: () => import("../views/HawaiiView.vue"),
   },
   {
     path: "/jamaica",
     name: "jamaica",
-    component: () => import("../views/JamaicaView"),
+    component: () => import("../views/JamaicaView.vue"),
   },
 ];
 
