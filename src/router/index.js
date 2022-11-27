@@ -23,22 +23,22 @@ const routes = [
   {
     path: "/brazil",
     name: "brazil",
-    component: BrazilView,
+    component: () => import("../views/BrazilView"),
   },
   {
     path: "/panama",
     name: "panama",
-    component: PanamaView,
+    component: () => import("../views/PanamaView"),
   },
   {
     path: "/hawaii",
     name: "hawaii",
-    component: HawaiiView,
+    component: () => import("../views/HawaiiView"),
   },
   {
     path: "/jamaica",
     name: "jamaica",
-    component: JamaicaView,
+    component: () => import("../views/JamaicaView"),
   },
 ];
 
