@@ -29,7 +29,7 @@ const routes = [
   {
     path: "/hawaii",
     name: "hawaii",
-    component: () => import("../views/HawaiiView"),
+    component: () => import(/* webpackChunkName: "hawaii" */ "../views/HawaiiView"),
   },
   {
     path: "/jamaica",
