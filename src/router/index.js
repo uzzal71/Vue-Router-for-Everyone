@@ -31,7 +31,6 @@ const routes = [
     name: "panama",
     component: () => import(/* webpackChunkName: "panama" */ "../views/PanamaView"),
   },
-  
   {
     path: "/jamaica",
     name: "jamaica",
