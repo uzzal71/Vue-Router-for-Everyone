@@ -1,8 +1,9 @@
 <template>
-    <section class="destination">
+    <section class="destinations">
         <h2>{{ destination.name }}</h2>
         <div class="destination-details">
-            <img :src="require(`@/assets/${destination.imgage}`)" alt="destination.name" />
+            <img :src="require(`@/assets/${destination.imgage}`)" :alt="destination.name" />
+            <p>{{ destination.description }}</p>
         </div>
     </section>
 </template>
@@ -20,9 +21,9 @@ export default {
         destination() {
             return store.destinations.find(
                 destination => destination.id === this.destinationId
-            )
+            );
         }
-    }
+  }
 }
 </script>
 
