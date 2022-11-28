@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import store from '@/store';
+
 export default {
     data() {
         return {
@@ -23,3 +25,21 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+img {
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+  max-height: 400px;
+}
+.destination-details {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  margin: 0 40px;
+  font-size: 20px;
+  text-align: left;
+}
+</style>
