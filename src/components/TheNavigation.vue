@@ -8,6 +8,18 @@
     </nav>
 </template>
 
+<script>
+import store from '@/store';
+
+export default {
+  data() {
+    return {
+      destinations: store.destinations
+    }
+  }
+}
+</script>
+
 <style scoped>
 #nav {
     padding: 30px;

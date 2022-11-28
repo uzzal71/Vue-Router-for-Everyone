@@ -1,10 +1,6 @@
 <template>
     <section class="destinations">
-        <h2>{{ destination.name }}</h2>
-        <div class="destination-details">
-            <img :src="require(`@/assets/${destination.imgage}`)" :alt="destination.name" />
-            <p>{{ destination.description }}</p>
-        </div>
+       {{ this.$route.params.id }}
     </section>
 </template>
 
