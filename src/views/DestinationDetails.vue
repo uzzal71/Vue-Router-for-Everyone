@@ -1,27 +1,29 @@
 <template>
     <section class="destinations">
        {{ this.$route.params.id }}
+       {{ destination.name }}
     </section>
 </template>
 
 <script>
-import store from '@/store';
+import store from "@/store";
 
 export default {
-    data() {
-        return {
-            destinationId: this.$route.params.id
-        }
-    },
-    computed: {
-        destination() {
-            return store.destinations.find(
-                destination => destination.id === this.destinationId
-            );
-        }
+  data() {
+    return {
+      destinationId: this.$route.params.id
+    };
+  },
+  computed: {
+    destination() {
+      return store.destinations.find(
+        destination => destination.id === this.destinationId
+      );
+    }
   }
-}
+};
 </script>
+
 
 <style scoped>
 img {
